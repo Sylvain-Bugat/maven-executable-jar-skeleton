@@ -2,11 +2,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
+	<!-- Required Maven version can be upgraded to 3.* if needed by a dependency or a plugin -->
 	<prerequisites>
 		<maven>2.2.1</maven>
 	</prerequisites>
 
 	<modelVersion>4.0.0</modelVersion>
+	<!-- Change the groupId, artifactId, version and name for your project -->
 	<groupId>com.github.sbugat</groupId>
 	<artifactId>maven-executable-jar-skeleton</artifactId>
 	<packaging>jar</packaging>
@@ -19,12 +21,13 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<!-- JDK/JRE Version -->
+		<!-- Java version can be upgraded to 1.6, 1.7, ... -->
 		<maven.compiler.source>1.5</maven.compiler.source>
 		<maven.compiler.target>1.5</maven.compiler.target>
 
 		<!-- Dependencies version properties-->
 		<!--<maven.artifactId.version>X.Y.Z</maven.artifactId.version>-->
-		
+
 		<!-- Maven Lifecycle Plugins Version -->
 		<maven.pluginclean.version>2.5</maven.pluginclean.version>
 		<maven.plugininstall.version>2.4</maven.plugininstall.version>
@@ -39,6 +42,7 @@
 	</properties>
 
 	<!-- Dependencies -->
+	<!-- Add here all dependencies needed for your project -->
 	<!-- <dependencies>
 		<dependency>
 			<groupId>groupId</groupId>
@@ -160,6 +164,7 @@
 		</profile>
 
 		<!-- Dependencies checker profile -->
+		<!-- Dependencies and plugins versions can be checked with the maven command: mvn versions:display-plugin-updates  versions:display-property-updates -P default,dependencies.check -->
 		<profile>
 			<id>dependencies.check</id>
 			<build>
