@@ -21,7 +21,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<!-- JDK/JRE Version -->
-		<!-- Java version can be upgraded to 1.6, 1.7, ... -->
+		<!-- Java version can be upgraded to 1.8, ... -->
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
 
@@ -143,7 +143,7 @@
 									<transformers>
 										<transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
 										<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-										<mainClass>com.github.sbugat.executablejarskeleton.ExecutableMainClass</mainClass>
+											<mainClass>com.github.sbugat.executablejarskeleton.ExecutableMainClass</mainClass>
 										</transformer>
 									</transformers>
 									<createDependencyReducedPom>false</createDependencyReducedPom>
