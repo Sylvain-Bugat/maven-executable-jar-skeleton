@@ -1,6 +1,8 @@
 maven-executable-jar-skeleton
 =============================
 
+[![License](https://img.shields.io/github/license/Sylvain-Bugat/maven-executable-jar-skeleton.svg)](https://github.com/Sylvain-Bugat/maven-executable-jar-skeleton/blob/master/LICENSE)
+
 Skeleton project of a simple self-executable jar with execution permission.
 
 ## Customize the executable jar
